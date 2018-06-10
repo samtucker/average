@@ -57,7 +57,7 @@ h1 {
   left: 50%;
   transform: translateX(-50%);
   width: 45.97%;
-  height: 64.78vh;
+  height: 68vh;
   border-radius: 8px;
   box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.06);
   background-color: #fff;
@@ -217,5 +217,21 @@ h1 {
   margin: auto;
   line-height: 48px;
   text-shadow: 0 2px 1px rgba(0, 0, 0, 0.07);
+  font-weight: lighter;
+}
+
+.score {
+  background: rgba(64, 195, 175, 0.08);
+  border: 1px solid #40C3AF;
+  border-radius: 100px;
+  width: 160px;
+  height: 41px;
+  text-align: center;
+  line-height: 41px;
+  margin: 6px auto 0 auto;
+  font-family: 'rubik';
+  font-size: 16px;
+  color: #2C9A89;
+  letter-spacing: 0.4px;
   font-weight: lighter;
 }

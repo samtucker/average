@@ -9,7 +9,7 @@ var questionNumber = 0;
 var currentQuestion;
 var currentAnswer;
 var answerOptions;
-var score;
+var score = 0;
 
 function play() {
   nextQuestion();
@@ -43,6 +43,7 @@ function nextQuestion() {
   console.log(currentQuestion);
   console.log(currentAnswer);
   document.getElementById('question_progress').innerHTML = "QUESTION " + questionNumber + " OF 15";
+  document.getElementById('score').innerHTML = "SCORE: " + score;
 }
 
 function writeAnswers() {
@@ -55,7 +56,6 @@ function writeAnswers() {
 
 function writeQuestion() {
   document.getElementById('question').innerHTML = currentQuestion;
-  // document.getElementById('question_progress').innerHTML =  "QUESTION" + string((questionNumber +1)) "OF" + string(question.length);
 }
 
 function createAlternativeAnswers() {
