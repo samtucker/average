@@ -53,7 +53,7 @@ h1 {
 
 .question_area {
   position: absolute;
-  margin-top: 14vh;
+  margin-top: 12vh;
   left: 50%;
   transform: translateX(-50%);
   width: 45.97%;
@@ -162,10 +162,15 @@ h1 {
   border-radius: 100px;
   font-family: 'rubik';
   color: #000000;
-  /*letter-spacing: 2px;*/
+  font-weight: lighter;
+  letter-spacing: 0.2px;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: rgb(74, 208, 180);
+  border-radius: 100px;
+  color: #FFFFFF;
+  text-align: center;
 }
 
 #correct_image {
