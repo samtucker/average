@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="main.css" type="text/css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <script type="text/javascript" src="main.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+</head>
+
+<body onload="play();">
+  <div class="main">
+    <h1> &lt;average game&gt; </h1>
+    <!-- <p class="time_header">The time remaining is 7:32</p> -->
+    <div class="question_area">
+      <a class="next_question_top_right" onclick="nextQuestion()">Next&gt;</a>
+      <img src="question_desktop_background.png" alt="background">
+      <div class="round_timer">
+        <p>7</p>
+      </div>
+      <p class="subtle question_number" id="question_progress"></p>
+      <h4 id="question" class="question"></h4>
+      <img id="correct_image" src="right.png" alt="correct">
+      <img id="incorrect_image" src="wrong.png" alt="incorrect">
+      <h4 id="correct_statement">Your Answer is Right!</h4>
+      <h4 id="incorrect_statement">Your Answer is Wrong!</h4>
+      <p class="subtle answer_result">Answer</p>
+      <div class="answer_buttons">
+        <a class="answer_button" id="option1" onclick="submitAnswer1()"></a>
+        <a class="answer_button" id="option2" onclick="submitAnswer2()"></a>
+        <a class="answer_button" id="option3" onclick="submitAnswer3()"></a>
+        <a class="answer_button" id="option4" onclick="submitAnswer4()"></a>
+      </div>
+      <a class="question_navigation" onclick="nextQuestion();">Next Question</a>
+    </div>
+  </div>
+
+</body>
+
+
+
+</html>
