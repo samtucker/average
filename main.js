@@ -77,9 +77,9 @@ function submitAnswer1() {
     document.getElementById('option1').style.border = "none";
   } else {
     incorrectAnswer();
-    document.getElementById('option2').style.backgroundColor = "#EB2225";
-    document.getElementById('option2').style.color = "#FFF";
-    document.getElementById('option2').style.border = "none";
+    document.getElementById('option1').style.backgroundColor = "#EB2225";
+    document.getElementById('option1').style.color = "#FFF";
+    document.getElementById('option1').style.border = "none";
   }
 }
 
@@ -107,9 +107,9 @@ function submitAnswer3() {
     correctAnswer();
   } else {
     incorrectAnswer();
-    document.getElementById('option2').style.backgroundColor = "#EB2225";
-    document.getElementById('option2').style.color = "#FFF";
-    document.getElementById('option2').style.border = "none";
+    document.getElementById('option3').style.backgroundColor = "#EB2225";
+    document.getElementById('option3').style.color = "#FFF";
+    document.getElementById('option3').style.border = "none";
   }
 }
 
@@ -122,9 +122,9 @@ function submitAnswer4() {
     document.getElementById('option4').style.border = "none";
   } else {
     incorrectAnswer();
-    document.getElementById('option2').style.backgroundColor = "#EB2225";
-    document.getElementById('option2').style.color = "#FFF";
-    document.getElementById('option2').style.border = "none";
+    document.getElementById('option4').style.backgroundColor = "#EB2225";
+    document.getElementById('option4').style.color = "#FFF";
+    document.getElementById('option4').style.border = "none";
   }
 }
 
