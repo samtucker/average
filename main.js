@@ -136,15 +136,15 @@ function incorrectAnswer() {
 }
 
 function findCorrectAnswer() {
-  if (option1 = currentAnswer) {
+  if (option1 == currentAnswer) {
     document.getElementById('option1').style.backgroundColor = "#98CD25";
     document.getElementById('option1').style.color = "#FFF";
     document.getElementById('option1').style.border = "none";
-  } else if (option2 = currentAnswer) {
+  } else if (option2 == currentAnswer) {
     document.getElementById('option2').style.backgroundColor = "#98CD25";
     document.getElementById('option2').style.color = "#FFF";
     document.getElementById('option2').style.border = "none";
-  } else if (option3 = currentAnswer) {
+  } else if (option3 == currentAnswer) {
     document.getElementById('option3').style.backgroundColor = "#98CD25";
     document.getElementById('option3').style.color = "#FFF";
     document.getElementById('option3').style.border = "none";
