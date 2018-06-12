@@ -240,3 +240,7 @@ h1 {
   letter-spacing: 0.4px;
   font-weight: lighter;
 }
+
+#result {
+  display: none;
+}

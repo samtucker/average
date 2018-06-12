@@ -20,6 +20,9 @@ function nextQuestion() {
   currentQuestion = questions[(questionNumber)];
   currentAnswer = answers[(questionNumber)];
   questionNumber++;
+  if (questionNumber >= 12) {
+    endGame();
+  }
   writeQuestion();
   writeAnswers();
   enableButtons();
@@ -173,4 +176,9 @@ function enableButtons() {
   document.getElementById('option2').disabled = false;
   document.getElementById('option3').disabled = false;
   document.getElementById('option4').disabled = false;
+}
+
+function endGame() {
+  document.getElementById('playing').style.display = "none";
+  // document.getElementById('result').style.display = "block";
 }
