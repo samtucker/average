@@ -22,6 +22,7 @@ function nextQuestion() {
   questionNumber++;
   writeQuestion();
   writeAnswers();
+  // enableButtons();
   document.getElementById('correct_image').style.display = "none";
   document.getElementById('question').style.display = "block";
   document.getElementById('incorrect_image').style.display = "none";
@@ -136,21 +137,40 @@ function incorrectAnswer() {
 }
 
 function findCorrectAnswer() {
-  if (option1 == currentAnswer) {
+  // disableButtons();
+  if (answerOptions[0] == currentAnswer) {
     document.getElementById('option1').style.backgroundColor = "#98CD25";
     document.getElementById('option1').style.color = "#FFF";
     document.getElementById('option1').style.border = "none";
-  } else if (option2 == currentAnswer) {
+  } else if (answerOptions[1] == currentAnswer) {
     document.getElementById('option2').style.backgroundColor = "#98CD25";
     document.getElementById('option2').style.color = "#FFF";
     document.getElementById('option2').style.border = "none";
-  } else if (option3 == currentAnswer) {
+  } else if (answerOptions[2] == currentAnswer) {
     document.getElementById('option3').style.backgroundColor = "#98CD25";
     document.getElementById('option3').style.color = "#FFF";
     document.getElementById('option3').style.border = "none";
-  } else {
+  } else if (answerOptions[3] == currentAnswer){
     document.getElementById('option4').style.backgroundColor = "#98CD25";
     document.getElementById('option4').style.color = "#FFF";
     document.getElementById('option4').style.border = "none";
+  } else {
+    console.log("no answers found");
   }
+}
+
+function disableButtons() {
+  console.log("disable");
+  document.getElementById("option1").disabled = true;
+  document.getElementById("option2").disabled = true;
+  document.getElementById("option3").disabled = true;
+  document.getElementById("option4").disabled = true;
+}
+
+function enableButtons() {
+  console.log("enable");
+  document.getElementById("option1").disabled = false;
+  document.getElementById("option2").disabled = false;
+  document.getElementById("option3").disabled = false;
+  document.getElementById("option4").disabled = false;
 }
