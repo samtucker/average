@@ -22,7 +22,7 @@ function nextQuestion() {
   questionNumber++;
   writeQuestion();
   writeAnswers();
-  // enableButtons();
+  enableButtons();
   document.getElementById('correct_image').style.display = "none";
   document.getElementById('question').style.display = "block";
   document.getElementById('incorrect_image').style.display = "none";
@@ -137,7 +137,7 @@ function incorrectAnswer() {
 }
 
 function findCorrectAnswer() {
-  // disableButtons();
+  disableButtons();
   if (answerOptions[0] == currentAnswer) {
     document.getElementById('option1').style.backgroundColor = "#98CD25";
     document.getElementById('option1').style.color = "#FFF";
@@ -161,16 +161,16 @@ function findCorrectAnswer() {
 
 function disableButtons() {
   console.log("disable");
-  document.getElementById("option1").disabled = true;
-  document.getElementById("option2").disabled = true;
-  document.getElementById("option3").disabled = true;
-  document.getElementById("option4").disabled = true;
+  document.getElementById('option1').disabled = true;
+  document.getElementById('option2').disabled = true;
+  document.getElementById('option3').disabled = true;
+  document.getElementById('option4').disabled = true;
 }
 
 function enableButtons() {
   console.log("enable");
-  document.getElementById("option1").disabled = false;
-  document.getElementById("option2").disabled = false;
-  document.getElementById("option3").disabled = false;
-  document.getElementById("option4").disabled = false;
+  document.getElementById('option1').disabled = false;
+  document.getElementById('option2').disabled = false;
+  document.getElementById('option3').disabled = false;
+  document.getElementById('option4').disabled = false;
 }
