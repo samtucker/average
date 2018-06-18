@@ -180,5 +180,6 @@ function enableButtons() {
 
 function endGame() {
   document.getElementById('playing').style.display = "none";
-  // document.getElementById('result').style.display = "block";
+  document.getElementById('result').style.display = "block";
+  document.getElementById('score').innerHTML = "SCORE: " + score;
 }
