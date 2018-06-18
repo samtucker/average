@@ -248,11 +248,26 @@ h1 {
 
 .facebook {
   background-color: rgb(60, 91, 151);
-  height: 50px;
-  width:  2000px;
-  line-height: 50px;
+  padding: 10px 20px 10px 20px;
   text-align: center;
   color: #fff;
+  position: absolute;
+  left: 50%;
+  margin-top: 10px;
+  transform: translateX(-50%);
   font-family: 'rubik';
   border-radius: 40px;
+}
+
+.replay {
+  background-color: rgb(74, 208, 180);
+  color: #fff;
+  padding: 10px 16px 10px 16px;
+  border-radius: 30px;
+  font-family: 'rubik';
+  text-transform: uppercase;
+  position: absolute;
+  left: 50%;
+  margin-top: 56px;
+  transform: translateX(-50%);
 }
