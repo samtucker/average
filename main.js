@@ -10,13 +10,13 @@ var currentQuestion;
 var currentAnswer;
 var answerOptions;
 var score = 0;
-var questionStart;
+var questionStart = 0;
 
 function play() {
+  questionNumber = Math.floor(Math.random() * (questions.length + 1));
+  // questionStart = questionNumber;
   nextQuestion();
   console.log("play");
-  questionNumber = Math.floor(Math.random() * (questions.length + 1));
-  questionStart = questionNumber;
 }
 
 function nextQuestion() {
@@ -26,9 +26,10 @@ function nextQuestion() {
   if (questionNumber > questions.length) {
     questionNumber = 0;
   }
-  if (questionNumber >= questionStart +12) {
+  if (questionStart >= 12) {
     endGame();
   }
+  questionStart ++;
   writeQuestion();
   writeAnswers();
   enableButtons();
@@ -52,7 +53,7 @@ function nextQuestion() {
   console.log("next question");
   console.log(currentQuestion);
   console.log(currentAnswer);
-  document.getElementById('question_progress').innerHTML = "QUESTION " + questionNumber + " OF 12";
+  document.getElementById('question_progress').innerHTML = "QUESTION " + questionStart + " OF 12";
   document.getElementById('score').innerHTML = "SCORE: " + score;
 }
 
